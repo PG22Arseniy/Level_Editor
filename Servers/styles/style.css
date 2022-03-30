@@ -1,0 +1,80 @@
+/*
+ * CSS Styles 
+ * 
+ *  Copyright (C) 2022 Arseniy Skudaev, All Rights Reserved
+ *
+ */
+
+.hide{
+    display: none !important;   
+}
+.cannon{
+    display: flex; 
+    align-items: center;
+}
+form div{
+    padding: 8px;   
+}
+.page-content{
+    display: flex;
+    padding: 0 20px;  
+}
+.edit-area_objects{
+    margin-left: 30px; 
+}
+.edit-area{
+    width: 1280px !important;
+    height: 720px !important;  
+    background: gray;  
+    position: relative; 
+} 
+h1{
+    text-align: center; 
+}
+.objects{
+    margin-top: 20px; 
+    width: 1280px !important;
+    height: 520px; 
+    background: grey;
+}
+ul{
+    list-style: none; 
+    max-width:  520px;
+
+    display: flex; 
+  
+}
+ul li{
+    margin: 5px;  
+}
+.target{
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative; 
+    background-image: url("https://icons.iconarchive.com/icons/femfoyou/angry-birds/128/angry-bird-icon.png")  ; 
+    background-size: cover; 
+    overflow: hidden;       
+}
+.object-img-1{
+    background-image: url("../images/wood.png")  ;   
+}
+.object-img-2{
+    background-image: url("../images/brick.png")  ;    
+} 
+.object-img-3{
+    background-image: url("../images/dimond.jpg")  ;     
+} 
+.level-img-day{
+    background-image: url("../images/day-background.webp")  ;    
+} 
+.level-img-night{
+    background-image: url("../images/night-background.jpg") ; 
+    background-repeat: no-repeat;      
+    background-size: contain;
+} 
+.level-img-weird{ 
+    background-image: url("../images/weird.jpg") ; 
+    background-repeat: no-repeat;      
+    background-size: contain;
+}

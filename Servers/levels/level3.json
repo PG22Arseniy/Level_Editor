@@ -1,0 +1,1 @@
+{"name":"level3","type":"level","userid":"arseniy","payload":{"name":"level3","type":"level","cannon":{"x":"0","y":"0"},"projectiles":"5","obstacles":"2","maxShots":"10","background":"level-img-night","star1":"1000","star2":"10000","star3":"50000","entities":{"collidables":[],"targets":[{"x":963,"y":252},{"x":216,"y":315}]}}}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML 5 Boilerplate</title>
+  <link rel="stylesheet" type="text/css" href="styles/style-base.css"> 
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+  <header class="grid-row-head grid-column-main">
+    <h1>Level Editor</h1>
+  </header>
+
+  <main class="grid-row-main grid-column-main">
+    <!-- Cool stuff here -->
+    <section id="editor-area">
+
+      <div id="box-1" class="steel-box" draggable="true"></div>
+
+    </section>
+    <div class="page-content">
+      <div class="forms">
+        <h2>Level Form</h2>
+        <form id="demo-form">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" list="names" id="name">
+            <button id="loadLevelBtn"> Load level </button>
+            <datalist id="names">
+              <!-- level names -->
+            </datalist>
+          </div>
+          <div class="hide">
+            <label for="type">Type:</label>
+            <input type="text" value="level" name="type" id="type">
+          </div>
+          <div class="cannon">
+            <label> Cannon: </label> 
+            <div>
+              <label for="xCanon">x:</label>
+              <input type="number" name="xCanon" id="xCannon" value="0"> <br />
+              <label for="yCanon">y:</label> 
+              <input type="number" name="yCanon" id="yCannon" value = "0"> 
+            </div>
+          </div>  
+        
+          <div > 
+            <label for="projectiles">Projectiles:</label>
+            <input type="number" name="projectiles" id="projectiles" value="5"> 
+          </div>
+          <div >
+            <label for="obstacles">Obstacles:</label>
+            <input type="number" name="obstacles" id="obstacles" value="0" readonly>  
+          </div>
+          <div >
+            <label for="maxShots">Max shots:</label>
+            <input type="number" name="maxShots" id="maxShots" value="10"> 
+          </div>
+          <div >
+            <label for="background">Background:</label>
+            <input type="text" name="background" list="background-list" id="background">
+           
+            <datalist id="background-list">
+              <option value="level-img-day"> level-img-day </option>  
+              <option value="level-img-night"> level-img-night </option>    
+              <option value="level-img-weird"> level-img-weird </option>    
+            </datalist>
+          </div>
+          <div >
+            <label for="star1">1 star score:</label>
+            <input type="number" name="star1" id="star1" value="1000"> 
+          </div>
+          <div >
+            <label for="star2">2 star score:</label>
+            <input type="number" name="star2" id="star2" value="10000"> 
+          </div>
+          <div >
+            <label for="star3">3 star score:</label>
+            <input type="number" name="star3" id="star3" value="50000">  
+          </div>
+          <input type="submit" value="Save">
+        </form>
+        <br />
+        <h2>Object Form</h2>
+        <form id="demo-form-object">
+          <div>
+            <label for="nameObj">Name:</label>
+            <input type="text" name="nameObj" list="namesObj" id="nameObj">
+            <button id="loadObjectBtn"> Load object </button> 
+            <datalist id="namesObj">
+              <!-- Object names -->
+            </datalist>
+          </div>
+          <div class="hide">
+            <label for="typeObj">Type:</label>
+            <input type="text" value="object" name="typeObj" id="typeObj">
+          </div>
+          <div>
+            <label> Value:</label>
+            <input type="number" name="value" id="value">
+          </div>
+          <div>
+            <label for="width">Width:</label>
+            <input type="number" name="width" id="width">
+          </div>
+          <div>
+            <label for="height">Height:</label>
+            <input type="number" name="height" id="height">
+          </div>
+          <div>
+            <label for="texture">Texture:</label>
+            <input type="text" name="texture" list="texture-list" id="texture">
+           
+            <datalist id="texture-list">
+              <option value="object-img-1"> object-img-1 </option>   
+              <option value="object-img-2"> object-img-2 </option>    
+              <option value="object-img-3"> object-img-3 </option>    
+            </datalist>
+          </div>
+          <div>
+            <label for="mass">Mass:</label>
+            <input type="number" name="mass" id="mass">
+          </div>
+          <div>
+            <label for="restitution">Restitution:</label>
+            <input type="number" name="restitution" id="restitution">
+          </div>
+          <div>
+            <label for="friction">Friction:</label>
+            <input type="number" name="friction" id="friction">
+          </div>
+          <div>
+            <label for="shape">Shape:</label>
+            <input type="text" name="shape" id="shape">
+          </div>
+
+          <input type="submit" value="Save">
+        </form>
+      </div>
+      <div class="edit-area_objects">
+        <div class="edit-area" id="edit-area">
+
+        </div>
+        <div class="objects">
+          <ul class="object-list" id="object-list">
+              <li> <div id = "entity" class="target" draggable="true"> </div>  </li>  
+          </ul>  
+        </div>
+      </div>
+    </div>
+ 
+  </main>
+  <footer class="grid-row-foot grid-column-main">
+    <p>&copy; Skudaev Arseniy 2022</p>
+  </footer>
+
+
+  <script type="module" src="./scripts/index.js"></script> 
+</body>
+
+</html>
