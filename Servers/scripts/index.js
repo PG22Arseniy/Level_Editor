@@ -238,9 +238,8 @@ class App {
     //get level names
     getLevelNames(){
         $.post("/api/get_level_list").then(data => {  
-            var namesDataList = document.getElementById('names');
-            console.log(data.error)  
-            data = data.payload;
+            var namesDataList = document.getElementById('names'); 
+            data = data.payload; 
            
             data.forEach(function (file) {
                 var option = document.createElement('option');
